@@ -23,7 +23,11 @@ export default {
         "button-ticket": "linear-gradient(89.29deg, #171121 -23.34%, #120905 48.58%, #080402 111.76%)",
         "button-ticket-span": "linear-gradient(103deg, #FFDCDC 23.61%, #FAF7F8 55.12%, #E0E9FF 82.8%)",
         "button-ticket-hover": "linear-gradient(89.29deg, #ED1173 -23.34%, #FF978C 111.76%)",
-        "button-aftermovie": "linear-gradient(89.29deg, #FFDCDC -23.34%, #FAF7F8 46.24%, #E0E9FF 111.76%)",
+        "button": "linear-gradient(89.29deg, #FFDCDC -23.34%, #FAF7F8 46.24%, #E0E9FF 111.76%)",
+        "artist-card": "linear-gradient(89.29deg, #FFDCDC -23.34%, #FAF7F8 48.58%, #E0E9FF 111.76%)",
+        "artist-card-pillule": "linear-gradient(89.29deg, #171121 -23.34%, #120905 48.58%, #080402 111.76%)",
+        "light-blut-gradient": "linear-gradient(89.29deg, #FFDCDC -23.34%, #FAF7F8 46.24%, #E0E9FF 111.76%)"
+
       }
     },
   },
