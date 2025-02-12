@@ -7,7 +7,7 @@ import { Footer } from "@/react/components/footer";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-poppins",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={cn("antialiased", poppins.variable, "h-dvh w-screen bg-background")}>
+      <body className={cn("antialiased", poppins.className, "h-dvh w-screen bg-background")}>
         <main className="pt-6 px-52">
           <Navbar />
 
