@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/utils/cn";
 import { Navbar } from "@/react/components/navbar/navbar";
+import { Footer } from "@/react/components/footer";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -27,6 +28,8 @@ export default function RootLayout({
 
           {children}
         </main>
+
+        <Footer />
       </body>
     </html>
   );

@@ -11,9 +11,9 @@ export default {
     extend: {
       colors: {
         background: "#004C59",
-        typoBlack: "#0E0704",
-        typoWhite: "#FFFFFF",
-        typoLightBlue: "#E0E9FF"
+        "typo-black": "#0E0704",
+        "typo-white": "#FFFFFF",
+        "typo-light-blue": "#E0E9FF"
       }
     },
   },
