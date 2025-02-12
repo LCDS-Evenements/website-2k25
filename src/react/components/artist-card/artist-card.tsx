@@ -11,12 +11,12 @@ export const ArtistCard: Component<ArtistCardProps> = ({ artist, type, container
       target="_blank" 
       prefetch={false}  
       className={cn(
-        "min-h-52 rounded-2xl bg-artist-card py-6 px-2 relative",
+        "min-h-52 rounded-2xl bg-artist-card py-6 px-2 relative overflow-hidden",
         type === "big" ? "row-span-2" : "row-span-1",
         containerClassName
       )}
     >
-      <div className="flex flex-col items-end gap-2">
+      <div className="flex flex-col items-end gap-2 z-10">
         <span className="bg-artist-card-pillule rounded-lg p-1 text-typo-white font-normal leading-4">{artist.hours}</span>
 
         <h3 className="text-typo-black font-bold text-3xl leading-9">{artist.name}</h3>
@@ -30,7 +30,7 @@ export const ArtistCard: Component<ArtistCardProps> = ({ artist, type, container
         width={100} 
         height={100} 
         className={cn(
-          "absolute bottom-0 left-0 block object-cover w-full h-[75%]",
+          "absolute bottom-0 left-0 block object-cover w-full h-[75%] z-20",
           imageClassName
         )} 
         fetchPriority="high" 
