@@ -22,7 +22,7 @@ export default function Home() {
           className="w-full h-auto"
         />
       </section>
-      <section className="py-32">
+      <section className="py-32" id="line-up">
         <div className="flex items-center gap-4 mb-5">
           <Button text="Tous" active={filter === "all"} onClick={() => setFilter("all")} />
   
@@ -38,7 +38,7 @@ export default function Home() {
               <span className="font-black text-9xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">LineUp</span>
             </h1>
           </div>
-          
+
           {all.map((artist, index) => (
             <ArtistCard 
               key={index} type={artist.type} 

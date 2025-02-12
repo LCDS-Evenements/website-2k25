@@ -11,7 +11,7 @@ export const ArtistCard: Component<ArtistCardProps> = ({ artist, type, container
       target="_blank" 
       prefetch={false}  
       className={cn(
-        "min-h-52 rounded-2xl bg-artist-card py-6 px-2 relative overflow-hidden",
+        "min-h-52 rounded-2xl bg-artist-card py-6 px-2 relative overflow-hidden border-white",
         type === "big" ? "row-span-2" : "row-span-1",
         containerClassName
       )}
