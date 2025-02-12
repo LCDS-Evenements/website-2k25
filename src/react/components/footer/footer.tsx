@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export const Footer = () => {
   return (
-    <footer style={{ background: "linear-gradient(89.29deg, #FFDCDC -23.34%, #FAF7F8 46.24%, #E0E9FF 111.76%)" }} className="py-16 px-20 flex items-center justify-between w-screen">
+    <footer className="bg-footer py-16 px-20 flex items-center justify-between w-screen">
       <Image src="/biscuit-logo-footer.svg" alt="Logo des CuicuiteDays 2k25" fetchPriority="high" loading="lazy" width={100} height={100} className="w-auto h-auto" />
 
       <div className="flex items-start gap-44">
