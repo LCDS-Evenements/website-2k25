@@ -26,8 +26,8 @@ export default {
         "button": "linear-gradient(89.29deg, #FFDCDC -23.34%, #FAF7F8 46.24%, #E0E9FF 111.76%)",
         "artist-card": "linear-gradient(89.29deg, #FFDCDC -23.34%, #FAF7F8 48.58%, #E0E9FF 111.76%)",
         "artist-card-pillule": "linear-gradient(89.29deg, #171121 -23.34%, #120905 48.58%, #080402 111.76%)",
-        "light-blut-gradient": "linear-gradient(89.29deg, #FFDCDC -23.34%, #FAF7F8 46.24%, #E0E9FF 111.76%)"
-
+        "light-blut-gradient": "linear-gradient(89.29deg, #FFDCDC -23.34%, #FAF7F8 46.24%, #E0E9FF 111.76%)",
+        "times-section": "linear-gradient(89.29deg, rgba(255, 220, 220, 0.24) -23.34%, rgba(250, 247, 248, 0.26) 46.24%, rgba(224, 233, 255, 0.28) 111.76%)"
       }
     },
   },
