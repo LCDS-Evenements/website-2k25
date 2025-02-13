@@ -110,7 +110,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-32" id="line-up">
+      <section className="py-32" id="history">
         <div className="flex items-center justify-between">
           <div className="flex flex-col items-start gap-8">
             <h2 className="flex flex-col items-start">
@@ -127,6 +127,13 @@ export default function Home() {
 
           <Image src="/story-picture.svg" alt="Photo de Humain, artistes de la précédente édition" width={100} height={100} className="w-auto h-auto" fetchPriority="high" loading="eager"  />
         </div>
+      </section>
+
+      <section className="py-32" id="sponsors">
+        <h2 className="flex flex-col items-start">
+          <span className="font-black text-5xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Nos</span>
+          <span className="font-black text-9xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Sponsors</span>
+        </h2>
       </section>
     </>
   );
