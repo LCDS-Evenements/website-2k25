@@ -33,8 +33,8 @@ export const ArtistCard: Component<ArtistCardProps> = ({ artist, type, container
           "absolute bottom-0 left-0 block object-cover w-full h-[75%] z-20",
           imageClassName
         )} 
-        fetchPriority="high" 
-        loading="eager" 
+        fetchPriority="low" 
+        loading="lazy" 
       />
     </Link>
   )

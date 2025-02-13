@@ -16,6 +16,7 @@ export default {
         "typo-light-blue": "#E0E9FF"
       },
       backgroundImage: {
+        "layout": "linear-gradient(235.64deg, #004C59 -1.78%, rgba(0, 63, 75, 0.85) 52.42%, #004C59 134.35%)",
         "navbar": "linear-gradient(89.29deg, #FFDCDC -23.34%, #FAF7F8 46.24%, #E0E9FF 111.76%)",
         "footer": "linear-gradient(89.29deg, #FFDCDC -23.34%, #FAF7F8 46.24%, #E0E9FF 111.76%)",
         "navbar-link": "linear-gradient(89.29deg, #171121 -23.34%, #120905 48.58%, #080402 111.76%)",

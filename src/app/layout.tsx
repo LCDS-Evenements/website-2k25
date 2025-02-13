@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={cn("antialiased", poppins.className, "h-dvh w-screen bg-background")}>
+      <body className={cn("antialiased", poppins.className, "w-screen bg-layout bg-cover")}>
         <main className="pt-6 px-52">
           <Navbar />
 
