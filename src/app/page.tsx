@@ -109,6 +109,25 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <section className="py-32" id="line-up">
+        <div className="flex items-center justify-between">
+          <div className="flex flex-col items-start gap-8">
+            <h2 className="flex flex-col items-start">
+              <span className="font-black text-5xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Notre</span>
+              <span className="font-black text-9xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Histoire</span>
+            </h2>
+
+            <p className="text-typo-white font-normal text-base max-w-3xl">
+              Découvrez Les CuicuiteDays, un festival musical unique en son genre qui célèbre sa troisième édition publique. Né d'une réunion amicale entre étudiants, cet événement s'est transformé en un véritable festival ouvert à tous, porté par une équipe passionnée et dynamique. ☀️
+              <br /><br />               
+              Durant deux jours intenses, profitez d'une programmation exceptionnelle avec plus de 10 artistes sur scène, des animations variées, une sélection de food-trucks gourmands, le tout dans une ambiance festive et conviviale. Un événement culturel incontournable qui ne cesse de grandir et d'enchanter son public 🎉
+            </p>
+          </div>
+
+          <Image src="/story-picture.svg" alt="Photo de Humain, artistes de la précédente édition" width={100} height={100} className="w-auto h-auto" fetchPriority="high" loading="eager"  />
+        </div>
+      </section>
     </>
   );
 }
