@@ -1,4 +1,4 @@
-export type ArtistCardProps = {
+export type ArtistCardLargeProps = {
   artist: {
     name: string;
     musicType: string;

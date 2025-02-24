@@ -1,10 +1,10 @@
 import { Component } from "@/utils/type"
-import type { ArtistCardProps } from "./artist-card.type"
+import type { ArtistCardLargeProps } from "./artist-card-large.type"
 import { cn } from "@/utils/cn"
 import Image from "next/image"
 import Link from "next/link"
 
-export const ArtistCard: Component<ArtistCardProps> = ({ artist, type, containerClassName, imageClassName }) => {
+export const ArtistCardLarge: Component<ArtistCardLargeProps> = ({ artist, type, containerClassName, imageClassName }) => {
   return (
     <Link 
       href={artist.link} 
@@ -13,6 +13,7 @@ export const ArtistCard: Component<ArtistCardProps> = ({ artist, type, container
       className={cn(
         "min-h-52 rounded-2xl bg-artist-card py-6 px-2 relative overflow-hidden border-white",
         type === "big" ? "row-span-2" : "row-span-1",
+        
         containerClassName
       )}
     >

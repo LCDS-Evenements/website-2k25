@@ -1,8 +1,9 @@
 "use client";
 
-import { all } from "@/config/artists";
+import { all, allResponsive } from "@/config/artists";
 import { ticketsLink } from "@/config/links";
-import { ArtistCard } from "@/react/components/artist-card";
+import { ArtistCardLarge } from "@/react/components/artist-card-large";
+import { ArtistCardResponsive } from "@/react/components/artist-card-responsive/artist-card-responsive";
 import { Button } from "@/react/components/button";
 import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
@@ -47,7 +48,7 @@ export default function Home() {
           <Button text="Samedi" active={filter === "saturday"} onClick={() => setFilter("saturday")} />
         </div>
 
-        <div className="grid grid-cols-3 grid-rows-6 gap-8">
+        <div className="grid-cols-3 gap-8 hidden sm:grid">
           <div className="row-span-1 min-h-52 flex items-center justify-center">
             <h2 className="flex flex-col items-start">
               <span className="font-black text-5xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">La</span>
@@ -56,8 +57,28 @@ export default function Home() {
           </div>
 
           {all.map((artist, index) => (
-            <ArtistCard 
-              key={index} type={artist.type} 
+            <ArtistCardLarge 
+              key={index} 
+              type={artist.type} 
+              artist={{ hours: artist.hours, image: artist.image, link: artist.link, musicType: artist.musicType, name: artist.name }} 
+              containerClassName={artist.containerClassName} 
+              imageClassName={artist.imageClassName} 
+            />
+          ))}
+        </div>
+
+        <div className="grid-cols-3 gap-4 grid sm:hidden">
+          <div className="row-span-1 min-h-16 flex items-center justify-center col-span-3">
+            <h2 className="flex flex-col w-full items-start">
+              <span className="font-black text-2xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">La</span>
+              <span className="font-black text-5xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">LineUp</span>
+            </h2>
+          </div>
+
+          {allResponsive.map((artist, index) => (
+            <ArtistCardResponsive 
+              key={index} 
+              type={artist.type} 
               artist={{ hours: artist.hours, image: artist.image, link: artist.link, musicType: artist.musicType, name: artist.name }} 
               containerClassName={artist.containerClassName} 
               imageClassName={artist.imageClassName} 

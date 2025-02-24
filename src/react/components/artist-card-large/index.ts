@@ -1,0 +1,1 @@
+export { ArtistCardLarge } from "./artist-card-large"
