@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <h1 className="hidden">Les CuicuiteDays 2k25 | 13 & 14 Juin</h1>
 
-      <section className="h-[calc(100dvh)] sm:h-[calc(100dvh-11.5rem)]">
+      <section className="sm:h-[calc(100dvh-11.5rem)]">
         <Image 
           src="/cover.svg" 
           alt="Illustration qui représente la direction artistique du site et du festival Les CuicuiteDays 2k25" 
@@ -51,8 +51,8 @@ export default function Home() {
         <div className="grid-cols-3 gap-8 hidden sm:grid">
           <div className="row-span-1 min-h-52 flex items-center justify-center">
             <h2 className="flex flex-col items-start">
-              <span className="font-black text-5xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">La</span>
-              <span className="font-black text-9xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">LineUp</span>
+              <span className="font-black text-[3vw] bg-light-blut-gradient leading-none text-transparent bg-clip-text">La</span>
+              <span className="font-black text-[7vw] bg-light-blut-gradient leading-none text-transparent bg-clip-text">LineUp</span>
             </h2>
           </div>
 
