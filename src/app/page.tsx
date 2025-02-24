@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <h1 className="hidden">Les CuicuiteDays 2k25 | 13 & 14 Juin</h1>
 
-      <section className="h-dvh sm:h-[calc(100dvh-11.5rem)]">
+      <section className="h-[calc(100dvh)] sm:h-[calc(100dvh-11.5rem)]">
         <Image 
           src="/cover.svg" 
           alt="Illustration qui représente la direction artistique du site et du festival Les CuicuiteDays 2k25" 
@@ -66,15 +66,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-32" id="times">
+      <section className="py-16 sm:py-32" id="times">
         <div className="bg-times-section p-12 rounded-2xl flex flex-col items-center gap-8">
           <h2 className="font-light text-3xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Dates & Horaires</h2>
 
-          <div className="flex items-center gap-36">
+          <div className="flex flex-col sm:flex-row items-center gap-16 sm:gap-36">
             <div className="flex flex-col justify-start gap-4">
               <h3 className="flex flex-col items-start">
-                <span className="font-black text-3xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Vendredi</span>
-                <span className="font-black text-7xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">13 Juin</span>
+                <span className="font-black text-xl sm:text-3xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Vendredi</span>
+                <span className="font-black text-5xl sm:text-7xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">13 Juin</span>
               </h3>
 
               <p className="flex flex-col items-start">
@@ -94,8 +94,8 @@ export default function Home() {
 
             <div className="flex flex-col justify-start gap-4">
               <h3 className="flex flex-col items-start">
-                <span className="font-black text-3xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Samedi</span>
-                <span className="font-black text-7xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">14 Juin</span>
+                <span className="font-black text-xl sm:text-3xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Samedi</span>
+                <span className="font-black text-5xl sm:text-7xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">14 Juin</span>
               </h3>
 
               <p className="flex flex-col items-start">
@@ -115,20 +115,20 @@ export default function Home() {
           </div>
 
           <Link href={ticketsLink} prefetch={false} target="_blank">
-            <button className="py-2 px-4 rounded-lg bg-button text-typo-black font-bold text-base">Je réserve mes places</button>
+            <button className="py-1 px-3 sm:py-2 sm:px-4 rounded-lg bg-button text-typo-black font-bold text-base">Je réserve mes places</button>
           </Link>
         </div>
       </section>
 
-      <section className="py-32" id="history">
-        <div className="flex items-center justify-between">
+      <section className="py-16 sm:py-32" id="history">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-8 sm:gap-0">
           <div className="flex flex-col items-start gap-8">
             <h2 className="flex flex-col items-start">
-              <span className="font-black text-5xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Notre</span>
-              <span className="font-black text-9xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Histoire</span>
+              <span className="font-black text-2xl sm:text-5xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Notre</span>
+              <span className="font-black text-5xl sm:text-9xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Histoire</span>
             </h2>
 
-            <p className="text-typo-white font-normal text-base max-w-3xl">
+            <p className="text-typo-white font-normal text-sm sm:text-base max-w-3xl">
               Découvrez Les CuicuiteDays, un festival musical unique en son genre qui célèbre sa troisième édition publique. Né d'une réunion amicale entre étudiants, cet événement s'est transformé en un véritable festival ouvert à tous, porté par une équipe passionnée et dynamique. ☀️
               <br /><br />               
               Durant deux jours intenses, profitez d'une programmation exceptionnelle avec plus de 10 artistes sur scène, des animations variées, une sélection de food-trucks gourmands, le tout dans une ambiance festive et conviviale. Un événement culturel incontournable qui ne cesse de grandir et d'enchanter son public 🎉
@@ -139,10 +139,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-32" id="sponsors">
+      <section className="py-16 sm:py-32" id="sponsors">
         <h2 className="flex flex-col items-start">
-          <span className="font-black text-5xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Nos</span>
-          <span className="font-black text-9xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Sponsors</span>
+          <span className="font-black text-2xl sm:text-5xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Nos</span>
+          <span className="font-black text-5xl sm:text-9xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Sponsors</span>
         </h2>
       </section>
     </>

@@ -23,10 +23,10 @@ export default function AftermoviesPage() {
       </div>
 
       <iframe
-          className="w-full aspect-video self-stretch md:min-h-96 rounded-2xl"
-          src={aftermovies[activeYear]}
-          title="Aftermovie du festival Les CuicuiteDays"
-          aria-hidden="true"
+        className="w-full aspect-video self-stretch sm:min-h-96 rounded-2xl"
+        src={aftermovies[activeYear]}
+        title="Aftermovie du festival Les CuicuiteDays"
+        aria-hidden="true"
       />
     </section>
   )
