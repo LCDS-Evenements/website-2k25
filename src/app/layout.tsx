@@ -23,14 +23,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={cn("antialiased", poppins.className, "w-screen bg-layout bg-cover")}>
-        <main className="pt-6 px-52">
+      <body className={cn("antialiased", poppins.className, "w-screen min-h-screen bg-layout bg-cover bg-no-repeat")}>
+        <main className="pt-6 px-4 md:px-52">
           <Navbar />
 
           {children}
         </main>
 
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

@@ -6,7 +6,7 @@ export const Button: Component<ButtonProps> = ({ active, onClick, text, classNam
   return (
     <button 
       className={cn(
-        "px-4 py-2 rounded-lg border-2 border-typo-white hover:bg-button cursor-pointer group",
+        "py-1 px-3 md:py-2 md:px-4 rounded-lg border-2 border-typo-white hover:bg-button cursor-pointer group",
         active && "bg-button",
         className
       )} 

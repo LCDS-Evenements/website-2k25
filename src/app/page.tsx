@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <h1 className="hidden">Les CuicuiteDays 2k25 | 13 & 14 Juin</h1>
 
-      <section className="h-[calc(100dvh-11.5rem)]">
+      <section className="h-dvh sm:h-[calc(100dvh-11.5rem)]">
         <Image 
           src="/cover.svg" 
           alt="Illustration qui représente la direction artistique du site et du festival Les CuicuiteDays 2k25" 
@@ -24,11 +24,21 @@ export default function Home() {
           loading="eager" 
           width={100} 
           height={100} 
-          className="w-full h-auto"
+          className="w-full h-auto hidden sm:block"
+        />
+
+        <Image 
+          src="/cover-small.svg" 
+          alt="Illustration qui représente la direction artistique du site et du festival Les CuicuiteDays 2k25" 
+          fetchPriority="high" 
+          loading="eager" 
+          width={100} 
+          height={100} 
+          className="w-full h-auto block sm:hidden"
         />
       </section>
 
-      <section className="py-32" id="line-up">
+      <section className="py-16 sm:py-32" id="line-up">
         <div className="flex items-center gap-4 mb-5">
           <Button text="Tous" active={filter === "all"} onClick={() => setFilter("all")} />
   
