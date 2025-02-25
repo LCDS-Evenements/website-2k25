@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function NotFound() {
   return (
-    <section className="h-[calc(100dvh-5.5rem)] pt-44">
+    <section className="h-[calc(100dvh-5.5rem)] md:pt-44 pt-20">
       <Link href="/" target="_self" className="flex items-center gap-2 text-typo-white text-base font-normal" prefetch={false}><ArrowLeftIcon size={20} /> Retour</Link>
 
       <h1 className="flex flex-col items-start gap-2 mt-4">

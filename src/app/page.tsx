@@ -162,12 +162,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-32" id="sponsors">
+      {/* <section className="py-16 sm:py-32" id="sponsors">
         <h2 className="flex flex-col items-start">
           <span className="font-black text-2xl sm:text-5xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Nos</span>
           <span className="font-black text-5xl sm:text-9xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Sponsors</span>
         </h2>
-      </section>
+      </section> */}
     </>
   );
 }

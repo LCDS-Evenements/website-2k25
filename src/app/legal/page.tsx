@@ -7,8 +7,8 @@ export default function LegalPage() {
       <Link href="/" target="_self" className="flex items-center gap-2 text-typo-white text-base font-normal" prefetch={false}><ArrowLeftIcon size={20} /> Retour</Link>
 
       <h1 className="flex flex-col items-start mt-4 mb-16">
-        <span className="font-normal text-8xl text-typo-light-blue">Mentions</span>
-        <span className="font-normal text-8xl text-typo-light-blue">Légales</span>
+        <span className="font-normal text-7xl sm:text-8xl text-typo-light-blue">Mentions</span>
+        <span className="font-normal text-7xl sm:text-8xl text-typo-light-blue">Légales</span>
       </h1>
 
       <div className="p-4 className flex flex-col items-start gap-4 mt-16">
