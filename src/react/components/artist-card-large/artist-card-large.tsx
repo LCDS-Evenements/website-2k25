@@ -4,7 +4,24 @@ import { cn } from "@/utils/cn"
 import Image from "next/image"
 import Link from "next/link"
 
-export const ArtistCardLarge: Component<ArtistCardLargeProps> = ({ artist, type, containerClassName, imageClassName }) => {
+export const ArtistCardLarge: Component<ArtistCardLargeProps> = ({ artist, type, containerClassName, imageClassName, comingSoon }) => {
+  if (comingSoon) {
+    return (
+      <div
+        className={cn(
+          "min-h-52 rounded-2xl bg-artist-card py-6 px-2 relative overflow-hidden border-white",
+          type === "big" ? "row-span-2" : "row-span-1",
+          
+          containerClassName
+        )}
+      >
+        <div className="flex items-center justify-center w-full h-full">
+          <p className="text-typo-black font-bold text-lg leading-4">Prochainement... 🤫</p>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <Link 
       href={artist.link} 

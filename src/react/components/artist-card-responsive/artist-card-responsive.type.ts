@@ -9,4 +9,5 @@ export type ArtistCardResponsiveProps = {
   type: "small" | "big";
   containerClassName?: string;
   imageClassName?: string;
+  comingSoon: boolean;
 };

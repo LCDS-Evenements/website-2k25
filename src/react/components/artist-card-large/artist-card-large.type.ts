@@ -9,4 +9,5 @@ export type ArtistCardLargeProps = {
   type: "small" | "big";
   containerClassName?: string;
   imageClassName?: string;
+  comingSoon: boolean;
 };

@@ -5,7 +5,22 @@ import Image from 'next/image'
 import { Component } from '@/utils/type'
 import { ArtistCardResponsiveProps } from './artist-card-responsive.type'
 
-export const ArtistCardResponsive: Component<ArtistCardResponsiveProps> = ({artist, type, containerClassName, imageClassName}) => {
+export const ArtistCardResponsive: Component<ArtistCardResponsiveProps> = ({ artist, type, containerClassName, imageClassName, comingSoon }) => {
+  if (comingSoon === true) {
+    return (
+      <div
+        className={cn(
+          "min-h-48 rounded-2xl bg-artist-card py-6 px-2 relative overflow-hidden border-white col-span-3",
+          containerClassName
+        )}
+      >
+        <div className="flex items-center justify-center w-full h-full">
+          <p className="text-typo-black font-bold text-lg leading-4">Prochainement... 🤫</p>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <Link 
       href={artist.link} 
