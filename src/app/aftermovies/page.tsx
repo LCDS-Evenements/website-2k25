@@ -14,7 +14,7 @@ export default function AftermoviesPage() {
         <span className="font-black text-4xl text-typo-light-blue leading-none">Aftermovies</span>
       </h1>
 
-      <div className="flex items-center gap-4 mb-4">
+      <div className="items-center gap-4 mb-4 hidden md:flex">
         <Button text="2024" active={activeYear === "2024"} onClick={() => setActiveYear("2024")} />
 
         <Button text="2023" active={activeYear === "2023"} onClick={() => setActiveYear("2023")} />
@@ -23,11 +23,34 @@ export default function AftermoviesPage() {
       </div>
 
       <iframe
-        className="w-full aspect-video self-stretch sm:min-h-96 rounded-2xl"
+        className="w-full aspect-video self-stretch hidden md:block sm:min-h-96 rounded-2xl"
         src={aftermovies[activeYear]}
         title="Aftermovie du festival Les CuicuiteDays"
         aria-hidden="true"
       />
+
+      <div className="flex flex-col gap-4 mt-12 md:hidden">
+        <iframe
+          className="w-full aspect-video self-stretch sm:min-h-96 rounded-2xl"
+          src={aftermovies["2024"]}
+          title="Aftermovie du festival Les CuicuiteDays"
+          aria-hidden="true"
+        />
+
+        <iframe
+          className="w-full aspect-video self-stretch sm:min-h-96 rounded-2xl"
+          src={aftermovies["2023"]}
+          title="Aftermovie du festival Les CuicuiteDays"
+          aria-hidden="true"
+        />
+
+        <iframe
+          className="w-full aspect-video self-stretch sm:min-h-96 rounded-2xl"
+          src={aftermovies["2022"]}
+          title="Aftermovie du festival Les CuicuiteDays"
+          aria-hidden="true"
+        />
+      </div>
     </section>
   )
 }
