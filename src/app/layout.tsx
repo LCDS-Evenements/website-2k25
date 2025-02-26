@@ -4,9 +4,9 @@ import "../styles/globals.css";
 import { cn } from "@/utils/cn";
 import { Navbar } from "@/react/components/navbar/navbar";
 import { Footer } from "@/react/components/footer";
-// import { navbarLinks } from "@/config/navbar";
-// import { socialLinks } from "@/config/footer";
-// import Link from "next/link";
+import { navbarLinks } from "@/config/navbar";
+import { socialLinks } from "@/config/footer";
+import Link from "next/link";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -74,33 +74,31 @@ export default function RootLayout({
     <html lang="fr">
       <body className={cn("antialiased", poppins.className, "w-screen min-h-screen bg-layout bg-cover bg-no-repeat")}>
         <main className="pt-6 px-4 md:px-28 lg:px-36 xl:px-52">
-          <Navbar />
-
-          {/* 
-            <div className="flex flex-col items-center justify-center gap-8 w-full h-screen ">
-              <div className="flex items-center justify-center">
-                <h1 className="font-bold text-xl sm:text-3xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">L'oiseau va bientôt sortir de son nid...</h1> 
-                <span className="hidden sm:block text-3xl">🤫</span>
-              </div>
-
-              <div className="flex items-center justify-center gap-2 flex-wrap">
-                {socialLinks.map((link, id) => (
-                  <Link key={id} href={link.href} target={link.target} prefetch={false} rel="noopener noreferrer">
-                    <button className="py-1 px-3 rounded-lg bg-button-ticket hover:bg-button-ticket-hover cursor-pointer">
-                      <span className="bg-button-ticket-span font-bold text-base text-transparent bg-clip-text">
-                        {link.label}
-                      </span>
-                    </button>
-                  </Link>
-                ))}
-              </div>
+          {/* <Navbar /> */}
+        
+          <div className="flex flex-col items-center justify-center gap-8 w-full h-screen ">
+            <div className="flex items-center justify-center">
+              <h1 className="font-bold text-xl sm:text-3xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">L'oiseau va bientôt sortir de son nid...</h1> 
+              <span className="hidden sm:block text-3xl">🤫</span>
             </div>
-          */}
 
-          {children}
+            <div className="flex items-center justify-center gap-2 flex-wrap">
+              {socialLinks.map((link, id) => (
+                <Link key={id} href={link.href} target={link.target} prefetch={false} rel="noopener noreferrer">
+                  <button className="py-1 px-3 rounded-lg bg-button-ticket hover:bg-button-ticket-hover cursor-pointer">
+                    <span className="bg-button-ticket-span font-bold text-base text-transparent bg-clip-text">
+                      {link.label}
+                    </span>
+                  </button>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* {children} */}
         </main>
 
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
