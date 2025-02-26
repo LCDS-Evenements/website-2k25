@@ -7,6 +7,7 @@ import { Footer } from "@/react/components/footer";
 import { navbarLinks } from "@/config/navbar";
 import { socialLinks } from "@/config/footer";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/next";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -99,6 +100,8 @@ export default function RootLayout({
         </main>
 
         {/* <Footer /> */}
+
+        <Analytics />
       </body>
     </html>
   );
