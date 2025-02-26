@@ -137,7 +137,7 @@ export default function Home() {
             </div>
           </div>
 
-          <Link href={ticketsLink} prefetch={false} target="_blank">
+          <Link href={ticketsLink} prefetch={false} target="_blank" rel="noopener noreferrer">
             <button className="py-1 px-3 sm:py-2 sm:px-4 rounded-lg bg-button text-typo-black font-bold text-base">Je réserve mes places</button>
           </Link>
         </div>

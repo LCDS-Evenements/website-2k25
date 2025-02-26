@@ -20,7 +20,14 @@ export const Navbar = () => {
 
         <div className="flex items-center gap-5">
           {navbarLinks.map((link, id) => (
-            <Link key={id} href={link.href} target={link.target} prefetch={false} className="hidden sm:block bg-navbar-link hover:bg-navbar-link-hover transition-all font-bold text-base text-transparent bg-clip-text">
+            <Link 
+              key={id} 
+              href={link.href} 
+              target={link.target} 
+              prefetch={false} 
+              className="hidden sm:block bg-navbar-link hover:bg-navbar-link-hover transition-all font-bold text-base text-transparent bg-clip-text"
+              rel="noopener noreferrer"
+            >
               {link.label}
             </Link>
           ))}

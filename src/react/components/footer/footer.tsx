@@ -13,7 +13,7 @@ export const Footer = () => {
 
           <div className="flex flex-col items-start gap-6">
             {navigationLinks.map((link, id) => (
-              <Link key={id} href={link.href} target={link.target} prefetch={false}>
+              <Link key={id} href={link.href} target={link.target} prefetch={false} rel="noopener noreferrer">
                 {link.label}
               </Link> 
             ))}
@@ -25,7 +25,7 @@ export const Footer = () => {
 
           <div className="flex flex-col items-start gap-6">
             {socialLinks.map((link, id) => (
-              <Link key={id} href={link.href} target={link.target} prefetch={false}>
+              <Link key={id} href={link.href} target={link.target} prefetch={false} rel="noopener noreferrer">
                 {link.label}
               </Link> 
             ))}
@@ -37,7 +37,7 @@ export const Footer = () => {
 
           <div className="flex flex-col items-start gap-6">
             {associationLinks.map((link, id) => (
-              <Link key={id} href={link.href} target={link.target} prefetch={false}>
+              <Link key={id} href={link.href} target={link.target} prefetch={false} rel="noopener noreferrer">
                 {link.label}
               </Link> 
             ))}
@@ -49,7 +49,7 @@ export const Footer = () => {
           
           <div className="flex flex-col items-start gap-6">
             {legalLinks.map((link, id) => (
-              <Link key={id} href={link.href} target={link.target} prefetch={false}>
+              <Link key={id} href={link.href} target={link.target} prefetch={false} rel="noopener noreferrer">
                 {link.label}
               </Link> 
             ))}

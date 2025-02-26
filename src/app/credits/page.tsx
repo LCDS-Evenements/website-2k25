@@ -15,7 +15,7 @@ export default function CreditsPage() {
 
         <p className="text-typo-white text-base font-semibold flex flex-col items-start gap-2">
           Baptiste SAVE
-          <Link href="https://batsave.tv/" target="_blank" prefetch={false}>
+          <Link href="https://batsave.tv/" target="_blank" prefetch={false} rel="noopener noreferrer">
             <button className="py-1 px-3 rounded-lg bg-button-ticket hover:bg-button-ticket-hover cursor-pointer">
               <span className="bg-button-ticket-span font-bold text-base text-transparent bg-clip-text">
                 Prendre contact
@@ -30,7 +30,7 @@ export default function CreditsPage() {
 
         <p className="text-typo-white text-base font-semibold flex flex-col items-start gap-2">
           Hugo CAMPOS
-          <Link href="https://hcampos.fr/" target="_blank" prefetch={false}>
+          <Link href="https://hcampos.fr/" target="_blank" prefetch={false} rel="noopener noreferrer">
             <button className="py-1 px-3 rounded-lg bg-button-ticket hover:bg-button-ticket-hover cursor-pointer">
               <span className="bg-button-ticket-span font-bold text-base text-transparent bg-clip-text">
                 Prendre contact
@@ -45,7 +45,7 @@ export default function CreditsPage() {
 
         <p className="text-typo-white text-base font-semibold flex flex-col items-start gap-2">
           Jeanne CHARRIER
-          <Link href="https://www.nenaje.com/" target="_blank" prefetch={false}>
+          <Link href="https://www.nenaje.com/" target="_blank" prefetch={false} rel="noopener noreferrer">
             <button className="py-1 px-3 rounded-lg bg-button-ticket hover:bg-button-ticket-hover cursor-pointer">
               <span className="bg-button-ticket-span font-bold text-base text-transparent bg-clip-text">
                 Prendre contact

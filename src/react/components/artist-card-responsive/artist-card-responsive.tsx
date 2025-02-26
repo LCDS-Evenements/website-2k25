@@ -24,7 +24,8 @@ export const ArtistCardResponsive: Component<ArtistCardResponsiveProps> = ({ art
   return (
     <Link 
       href={artist.link} 
-      target="_blank" 
+      target="_blank"
+      rel="noopener noreferrer" 
       prefetch={false}  
       className={cn(
         "min-h-48 rounded-2xl bg-artist-card py-6 px-2 relative overflow-hidden border-white col-span-3",

@@ -26,7 +26,8 @@ export const ArtistCardLarge: Component<ArtistCardLargeProps> = ({ artist, type,
     <Link 
       href={artist.link} 
       target="_blank" 
-      prefetch={false}  
+      prefetch={false}
+      rel="noopener noreferrer"
       className={cn(
         "min-h-52 rounded-2xl bg-artist-card py-6 px-2 relative overflow-hidden border-white",
         type === "big" ? "row-span-2" : "row-span-1",

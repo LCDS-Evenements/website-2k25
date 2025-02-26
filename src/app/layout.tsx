@@ -15,8 +15,7 @@ const data = {
   title: "Les CuicuiteDays | 13 & 14 Juin 2025",
   description: [
     "Les CuicuiteDays revienne cette année pour une nouvelle édition qui aura lieu les 13 et 14 juin 2025. 📅",
-    "Durant ces deux jours vous pourrez retrouver une 10aime d'artistes qui se produiront sur la scène du festival. 🎤",
-    "Pour plus d'informations, direction nos réseaux sociaux ! 🌐"
+    "Durant ces deux jours vous pourrez retrouver une 10aime d'artistes qui se produiront sur la scène du festival. 🎤"
   ].join(" "),
   siteName: "Les CuicuiteDays | 13 & 14 Juin 2025"
 };
