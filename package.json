@@ -33,7 +33,6 @@
   "eslintConfig": {
     "extends": [
       "next/core-web-vitals",
-      "@bluzzi/eslint-config",
       "plugin:storybook/recommended"
     ]
   }
