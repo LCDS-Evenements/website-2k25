@@ -158,7 +158,7 @@ export default function Home() {
             </p>
           </div>
 
-          <Image src="/story-picture.svg" alt="Photo de Humain, artistes de la précédente édition" width={100} height={100} className="w-auto h-auto" fetchPriority="low" loading="lazy"  />
+          <Image src="/story-picture.svg" alt="Photo de Humain, artistes de la précédente édition" width={100} height={100} className="w-auto h-auto" fetchPriority="low" loading="eager"  />
         </div>
       </section>
 

@@ -48,7 +48,7 @@ export const ArtistCardResponsive: Component<ArtistCardResponsiveProps> = ({ art
           "absolute bottom-0 left-0 block object-cover w-full h-[75%] z-20",
           imageClassName
         )} 
-        fetchPriority="low" 
+        fetchPriority="high" 
         loading="lazy" 
       />
     </Link>
