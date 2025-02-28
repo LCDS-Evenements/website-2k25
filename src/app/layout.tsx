@@ -79,7 +79,7 @@ export default function RootLayout({
         
           <div className="flex flex-col items-center justify-center gap-8 w-full h-screen ">
             <div className="flex items-center justify-center">
-              <h1 className="font-bold text-xl sm:text-3xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">L'oiseau va bientôt sortir de son nid...</h1> 
+              <h1 className="font-bold text-md sm:text-3xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">L'oiseau va bientôt sortir de son nid...</h1> 
               <span className="hidden sm:block text-3xl">🤫</span>
             </div>
 
