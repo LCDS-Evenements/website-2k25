@@ -1,1 +1,1 @@
-export const ticketsLink = "https://www.helloasso.com/associations/lcds-evenements/evenements/billetterie-pour-les-cuicuitedays-2k25";
+export const ticketsLink = "https://link.cuicuitedays.fr/tickets";
