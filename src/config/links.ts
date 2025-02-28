@@ -1,1 +1,1 @@
-export const ticketsLink = "https://link.cuicuitedays.fr/tickets";
+export const ticketsLink = "https://link.cuicuitedays.fr/tickets-website";
