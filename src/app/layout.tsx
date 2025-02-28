@@ -75,9 +75,9 @@ export default function RootLayout({
     <html lang="fr">
       <body className={cn("antialiased", poppins.className, "w-screen min-h-screen bg-layout bg-cover bg-no-repeat")}>
         <main className="pt-6 px-4 md:px-28 lg:px-36 xl:px-52">
-          <Navbar />
+          {/* <Navbar /> */}
         
-          {/* <div className="flex flex-col items-center justify-center gap-8 w-full h-screen ">
+          <div className="flex flex-col items-center justify-center gap-8 w-full h-screen ">
             <div className="flex items-center justify-center">
               <h1 className="font-bold text-xl sm:text-3xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">L'oiseau va bientôt sortir de son nid...</h1> 
               <span className="hidden sm:block text-3xl">🤫</span>
@@ -94,12 +94,12 @@ export default function RootLayout({
                 </Link>
               ))}
             </div>
-          </div> */}
+          </div>
 
-          {children}
+          {/* {children} */}
         </main>
 
-        <Footer />
+        {/* <Footer /> */}
 
         <Analytics />
       </body>
