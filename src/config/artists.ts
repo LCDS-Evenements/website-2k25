@@ -13,7 +13,7 @@ type Artist = {
 export const all: Artist[] = [
   { name: "Boris & Moris", hours: "Ven | 01:30", musicType: "Electro", image: "/artists/boris-moris.svg", link: "https://www.youtube.com/@BorisMoris", type: "big", comingSoon: false },
   { name: "Heads Up", hours: "Ven | 21:00", musicType: "Punk Rock", image: "/artists/heads-up.svg", link: "https://www.youtube.com/@headsup3544", type: "small", comingSoon: false },
-  { name: "Supa Mana", hours: "Ven | 22:30", musicType: "Reggae Dub", image: "/artists/supa-mana.svg", link: "https://www.youtube.com/channel/UCNdBVna996MaWDoSAJw7xaQ", type: "small", imageClassName: "h-[100%] w-1/2", comingSoon: false },
+  { name: "Supa Mana", hours: "Ven | 22:30", musicType: "Reggae Dub", image: "/artists/supa-mana.svg", link: "https://www.youtube.com/channel/UCNdBVna996MaWDoSAJw7xaQ", type: "small", imageClassName: "h-[65%] w-[70%]", comingSoon: false },
   { name: "Soom T", hours: "Sam | 22:00", musicType: "Hip Hop / Reggae", image: "/artists/soom-t.svg", link: "https://www.youtube.com/@SoomTOfficial", type: "big", comingSoon: false },
   { name: "Jive Me", hours: "Sam | 23:30", musicType: "Electro / Pop", image: "/artists/jive-me.svg", link: "https://www.youtube.com/@JiveMe", type: "big", comingSoon: false },
   { name: "Humain", hours: "Sam | 01:30", musicType: "Electro", image: "/artists/humain.svg", link: "https://open.spotify.com/intl-fr/artist/1MN6t4NUBQaUCWnOElk4op", type: "small", imageClassName: "h-[100%] w-3/4", comingSoon: false },
