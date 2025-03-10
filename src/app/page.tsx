@@ -40,14 +40,6 @@ export default function Home() {
       </section>
 
       <section className="py-16 sm:py-32" id="line-up">
-        {/* <div className="flex items-center gap-4 mb-5">
-          <Button text="Tous" active={filter === "all"} onClick={() => setFilter("all")} />
-  
-          <Button text="Vendredi" active={filter === "friday"} onClick={() => setFilter("friday")} />
-  
-          <Button text="Samedi" active={filter === "saturday"} onClick={() => setFilter("saturday")} />
-        </div> */}
-
         <div className="grid-cols-3 gap-8 hidden sm:grid">
           <div className="row-span-1 min-h-52 flex items-center justify-center">
             <h2 className="flex flex-col items-start">
