@@ -10,6 +10,7 @@ import { merchLink } from "@/config/links";
 export default function MerchandisingPage() {
   const [tee, setTee] = useState<string>("front")
   const [sweat, setSweat] = useState<string>("front")
+  const [oldSweat, setOldSweat] = useState<string>("front")
 
   const handleTee = () => {
     if (tee === "front") {
@@ -24,6 +25,14 @@ export default function MerchandisingPage() {
       setSweat("back")
     } else {
       setSweat("front")
+    }
+  }
+
+  const handleOldSweat = () => {
+    if (sweat === "front") {
+      setOldSweat("back")
+    } else {
+      setOldSweat("front")
     }
   }
 
@@ -49,7 +58,7 @@ export default function MerchandisingPage() {
           <div className="flex flex-col items-start justify-center w-full lg:w-1/2">
             <h4 className="text-typo-light-blue text-2xl font-bold mb-4">Le Tee Shirt</h4>
             <p className="text-typo-white font-normal text-base mb-2">Tee shirt de la nouvelle édition des CuicuiteDays 2k25 en collaboration avec la marque de prêt à porter Banc de Sable ! Vous retrouverez sur le devant le logo du festival et au dos un dessin qui représente une pochette de vynile au couleur du festival.</p>
-            <span className="text-typo-white font-normal text-base mb-4">Taille disponible : XL | L | M | S | XS | XXS</span>
+            <span className="text-typo-white font-normal text-base mb-4">Taille disponible : S | M | L | XL | XXL | 3XL</span>
             <span className="text-typo-white font-normal text-base mb-4">Le design du produit peut ne pas être identique à celui que vous allez recevoir, certaines légères modifications peuvent être apportées.</span>
             <Link className="bg-merch-button rounded-lg px-4 py-2 font-medium text-base text-typo-white" href={merchLink}>Voir la boutique</Link>
           </div>
@@ -59,7 +68,7 @@ export default function MerchandisingPage() {
           <div className="flex flex-col items-start justify-center w-full lg:w-1/2">
             <h4 className="text-typo-light-blue text-2xl font-bold mb-4">Le Sweat</h4>
             <p className="text-typo-white font-normal text-base mb-2">Sweat de la nouvelle édition des CuicuiteDays 2k25 en collaboration avec la marque de prêt à porter Banc de Sable ! Vous retrouverez sur le devant le logo du festival et au dos le nom du festival avec la DA du festival.</p>
-            <span className="text-typo-white font-normal text-base mb-4">Taille disponible : XL | L | M | S | XS | XXS</span>
+            <span className="text-typo-white font-normal text-base mb-4">Taille disponible : S | M | L | XL | XXL | 3XL</span>
             <span className="text-typo-white font-normal text-base mb-4">Le design du produit peut ne pas être identique à celui que vous allez recevoir, certaines légères modifications peuvent être apportées.</span>
             <Link className="bg-merch-button rounded-lg px-4 py-2 font-medium text-base text-typo-white" href={merchLink}>Voir la boutique</Link>
           </div>
@@ -73,6 +82,26 @@ export default function MerchandisingPage() {
               <button onClick={handleSweat} className="bg-layout rounded-lg p-2 lg:p-4 text-typo-white"><ArrowBigLeftIcon /></button>
               <button onClick={handleSweat} className="bg-layout rounded-lg p-2 lg:p-4 text-typo-white"><ArrowBigRightIcon /></button>
             </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col lg:flex-row items-start justify-between gap-4">
+          <div className="bg-silver-gradient rounded-lg lg:w-2/5 w-full relative flex items-center justify-center">
+            <Image src="/tee-front.png" alt="tee shirt" width={300} height={300} className={cn("w-[65%] h-full", tee === "front" ? "block" : "hidden")} />
+            <Image src="/tee-back.png" alt="tee shirt" width={300} height={300} className={cn("w-[65%] h-full", tee === "back" ? "block" : "hidden")} />
+
+            <div className="flex items-center w-full justify-evenly absolute bottom-10">
+              <button onClick={handleTee} className="bg-layout rounded-lg p-2 lg:p-4 text-typo-white"><ArrowBigLeftIcon /></button>
+              <button onClick={handleTee} className="bg-layout rounded-lg p-2 lg:p-4 text-typo-white"><ArrowBigRightIcon /></button>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-start justify-center w-full lg:w-1/2">
+            <h4 className="text-typo-light-blue text-2xl font-bold mb-4">Le Sweat de l'édition 2k24 (QUANTITÉ LIMITÉ)</h4>
+            <p className="text-typo-white font-normal text-base mb-2">Sweat de l'édition des CuicuiteDays 2k24. Vous retrouverez sur le devant le logo du festival et au dos une broderie de l'ancien logo du festival.</p>
+            <span className="text-typo-white font-normal text-base mb-4">Taille disponible : L</span>
+            <span className="text-typo-white font-normal text-base mb-4">Le design du produit peut ne pas être identique à celui que vous allez recevoir, certaines légères modifications peuvent être apportées.</span>
+            <Link className="bg-merch-button rounded-lg px-4 py-2 font-medium text-base text-typo-white" href={merchLink}>Voir la boutique</Link>
           </div>
         </div>
       </div>
