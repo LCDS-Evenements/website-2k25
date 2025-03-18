@@ -87,8 +87,8 @@ export default function MerchandisingPage() {
 
         <div className="flex flex-col lg:flex-row items-start justify-between gap-4">
           <div className="bg-silver-gradient rounded-lg lg:w-2/5 w-full relative flex items-center justify-center">
-            <Image src="/tee-front.png" alt="tee shirt" width={300} height={300} className={cn("w-[65%] h-full", tee === "front" ? "block" : "hidden")} />
-            <Image src="/tee-back.png" alt="tee shirt" width={300} height={300} className={cn("w-[65%] h-full", tee === "back" ? "block" : "hidden")} />
+            <Image src="/old-sweat-front.png" alt="old sweat" width={300} height={300} className={cn("w-[65%] h-full", tee === "front" ? "block" : "hidden")} />
+            <Image src="/old-sweat-back.png" alt="old sweat" width={300} height={300} className={cn("w-[65%] h-full", tee === "back" ? "block" : "hidden")} />
 
             <div className="flex items-center w-full justify-evenly absolute bottom-10">
               <button onClick={handleTee} className="bg-layout rounded-lg p-2 lg:p-4 text-typo-white"><ArrowBigLeftIcon /></button>
