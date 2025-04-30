@@ -2,17 +2,18 @@
 
 import { all, allResponsive } from "@/config/artists";
 import { ticketsLink } from "@/config/links";
+import { sponsors } from "@/config/sponsors";
 import { ArtistCardLarge } from "@/react/components/artist-card-large";
 import { ArtistCardResponsive } from "@/react/components/artist-card-responsive/artist-card-responsive";
 import { Button } from "@/react/components/button";
+import { randomizeArray } from "@/utils/array";
+import { cn } from "@/utils/cn";
 import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
-  const [filter, setFilter] = useState<"all" | "friday" | "saturday">("all");
-
   return (
     <>
       <h1 className="hidden">Les CuicuiteDays 2k25 | 13 & 14 Juin</h1>
@@ -154,12 +155,48 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section className="py-16 sm:py-32" id="sponsors">
+      <section className="py-16 sm:py-32" id="sponsors">
         <h2 className="flex flex-col items-start">
           <span className="font-black text-2xl sm:text-5xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Nos</span>
           <span className="font-black text-5xl sm:text-9xl bg-light-blut-gradient leading-none text-transparent bg-clip-text">Sponsors</span>
         </h2>
-      </section> */}
+
+        <div className="w-full flex items-center justify-center gap-6 flex-wrap mt-16">
+          {randomizeArray(sponsors)!.map((sponsor, index) => {
+            if (sponsor.href === undefined) {
+              return (
+                <div className="bg-light-blut-gradient rounded-full h-40 w-40 mx-6 flex items-center justify-center group">
+                  <img 
+                    src={sponsor.imgPath} 
+                    loading="eager" 
+                    fetchPriority="high" 
+                    alt={sponsor.name} 
+                    width={90} 
+                    height={90} 
+                    className={cn("max-w-full h-auto group-hover:scale-105 transition-all duration-500", sponsor.className)} 
+                  />
+                </div>
+              )
+            }
+
+            return (
+              <Link href={sponsor.href} prefetch={false} target="_blank" rel="noopener noreferrer">
+                <div className="bg-light-blut-gradient rounded-full h-40 w-40 flex items-center justify-center group">
+                  <img 
+                    src={sponsor.imgPath} 
+                    loading="eager" 
+                    fetchPriority="high" 
+                    alt={sponsor.name} 
+                    width={90} 
+                    height={90} 
+                    className={cn("max-w-full h-auto group-hover:scale-105 transition-all duration-500", sponsor.className)} 
+                  />
+                </div>
+              </Link>
+            )
+          })}
+        </div>
+      </section>
     </>
   );
 }
